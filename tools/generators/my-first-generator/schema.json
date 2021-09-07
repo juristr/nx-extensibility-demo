@@ -6,7 +6,7 @@
   "properties": {
     "name": {
       "type": "string",
-      "description": "Library name",
+      "description": "Conference name",
       "$default": {
         "$source": "argv",
         "index": 0

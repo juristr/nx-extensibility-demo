@@ -1,10 +1,10 @@
-import { Tree, formatFiles, installPackagesTask } from '@nrwl/devkit';
-import { libraryGenerator } from '@nrwl/workspace/generators';
+import { formatFiles, names, logger, Tree } from '@nrwl/devkit';
 
-export default async function (tree: Tree, schema: any) {
-  await libraryGenerator(tree, { name: schema.name });
-  await formatFiles(tree);
-  return () => {
-    installPackagesTask(tree);
-  };
+interface MyFirstGeneratorSchema {
+  name: string;
+}
+
+export default async function (tree: Tree, schema: MyFirstGeneratorSchema) {
+  logger.info(`Hello, ${names(schema.name).className}!`);
+  // await formatFiles(tree);
 }
