@@ -101,6 +101,28 @@
           }
         }
       }
+    },
+    "nx-conf": {
+      "root": "libs/nx-conf",
+      "sourceRoot": "libs/nx-conf/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/nx-conf/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/nx-conf"],
+          "options": {
+            "jestConfig": "libs/nx-conf/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

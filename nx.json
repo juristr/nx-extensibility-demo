@@ -33,6 +33,9 @@
     "demo-e2e": {
       "tags": [],
       "implicitDependencies": ["demo"]
+    },
+    "nx-conf": {
+      "tags": []
     }
   }
 }
