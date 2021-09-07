@@ -36,6 +36,13 @@
     },
     "nx-conf": {
       "tags": []
+    },
+    "workspace-extensions": {
+      "tags": []
+    },
+    "workspace-extensions-e2e": {
+      "tags": [],
+      "implicitDependencies": ["workspace-extensions"]
     }
   }
 }

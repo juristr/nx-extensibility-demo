@@ -1477,6 +1477,47 @@
     tmp "~0.2.1"
     tslib "^2.0.0"
 
+"@nrwl/node@12.9.0":
+  version "12.9.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/node/-/node-12.9.0.tgz#fbc0a878d47f0ddff4cda28cdb34c3fe04a830c7"
+  integrity sha512-AluoSQVMKMCPMvlPZbBxTNlVQTx6/nFOZZMOYCrNLWgWuyfX29jrghCw3WSDAW41B9+ruhxPLxzmER/T58FfuQ==
+  dependencies:
+    "@nrwl/devkit" "12.9.0"
+    "@nrwl/jest" "12.9.0"
+    "@nrwl/linter" "12.9.0"
+    "@nrwl/workspace" "12.9.0"
+    chalk "4.1.0"
+    circular-dependency-plugin "5.2.0"
+    copy-webpack-plugin "6.4.1"
+    fork-ts-checker-webpack-plugin "6.2.10"
+    fs-extra "^9.1.0"
+    glob "7.1.4"
+    license-webpack-plugin "2.3.15"
+    rxjs "^6.5.4"
+    rxjs-for-await "0.0.2"
+    source-map-support "0.5.19"
+    tree-kill "1.2.2"
+    ts-loader "5.4.5"
+    tsconfig-paths-webpack-plugin "3.4.1"
+    tslib "^2.0.0"
+    webpack "4.46.0"
+    webpack-merge "4.2.1"
+    webpack-node-externals "1.7.2"
+
+"@nrwl/nx-plugin@^12.9.0":
+  version "12.9.0"
+  resolved "https://registry.yarnpkg.com/@nrwl/nx-plugin/-/nx-plugin-12.9.0.tgz#8b4006aef165203eb9c9424e07fdc4069f04e890"
+  integrity sha512-92WdCQilv3TtufhJca1vWWU8wYqo7EFF0pdaPPrjOFZU1F+leaysyV61iUprfllzyYbZb33jN7uHYH0HFI/Dcw==
+  dependencies:
+    "@nrwl/devkit" "12.9.0"
+    "@nrwl/jest" "12.9.0"
+    "@nrwl/linter" "12.9.0"
+    "@nrwl/node" "12.9.0"
+    fs-extra "^9.1.0"
+    rxjs "^6.5.4"
+    tslib "^2.0.0"
+    yargs "15.4.1"
+
 "@nrwl/react@12.9.0":
   version "12.9.0"
   resolved "https://registry.yarnpkg.com/@nrwl/react/-/react-12.9.0.tgz#dd10aa3b6933ef319f97d3f464b71bcce0f58626"
@@ -10446,7 +10487,7 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@^0.5.17, source-map-support@^0.5.6, source-map-support@~0.5.12, source-map-support@~0.5.19:
+source-map-support@0.5.19, source-map-support@^0.5.17, source-map-support@^0.5.6, source-map-support@~0.5.12, source-map-support@~0.5.19:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
@@ -11160,6 +11201,11 @@ tr46@^2.1.0:
   integrity sha512-15Ih7phfcdP5YxqiB+iDtLoaTz4Nd35+IiAv0kQ5FNKHzXgdWqPoTIqEDDJmXceQt4JZk6lVPT8lnDlPpGDppw==
   dependencies:
     punycode "^2.1.1"
+
+tree-kill@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/tree-kill/-/tree-kill-1.2.2.tgz#4ca09a9092c88b73a7cdc5e8a01b507b0790a0cc"
+  integrity sha512-L0Orpi8qGpRG//Nd+H90vFB+3iHnue1zSSGmNOOCh1GLJ7rUKVwV2HvijphGQS2UmhUZewS9VgvxYIdgr+fG1A==
 
 ts-jest@27.0.3:
   version "27.0.3"

@@ -1,0 +1,12 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "name": "workspace-extensions",
+  "version": "0.0.1",
+  "generators": {
+    "workspace-extensions": {
+      "factory": "./src/generators/workspace-extensions/generator",
+      "schema": "./src/generators/workspace-extensions/schema.json",
+      "description": "workspace-extensions generator"
+    }
+  }
+}

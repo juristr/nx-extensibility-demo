@@ -123,6 +123,75 @@
           }
         }
       }
+    },
+    "workspace-extensions": {
+      "root": "libs/workspace-extensions",
+      "sourceRoot": "libs/workspace-extensions/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "outputs": ["{options.outputFile}"],
+          "options": {
+            "lintFilePatterns": ["libs/workspace-extensions/**/*.ts"]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/workspace-extensions"],
+          "options": {
+            "jestConfig": "libs/workspace-extensions/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "executor": "@nrwl/node:package",
+          "outputs": ["{options.outputPath}"],
+          "options": {
+            "outputPath": "dist/libs/workspace-extensions",
+            "tsConfig": "libs/workspace-extensions/tsconfig.lib.json",
+            "packageJson": "libs/workspace-extensions/package.json",
+            "main": "libs/workspace-extensions/src/index.ts",
+            "assets": [
+              "libs/workspace-extensions/*.md",
+              {
+                "input": "./libs/workspace-extensions/src",
+                "glob": "**/!(*.ts)",
+                "output": "./src"
+              },
+              {
+                "input": "./libs/workspace-extensions/src",
+                "glob": "**/*.d.ts",
+                "output": "./src"
+              },
+              {
+                "input": "./libs/workspace-extensions",
+                "glob": "generators.json",
+                "output": "."
+              },
+              {
+                "input": "./libs/workspace-extensions",
+                "glob": "executors.json",
+                "output": "."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "workspace-extensions-e2e": {
+      "root": "apps/workspace-extensions-e2e",
+      "projectType": "application",
+      "sourceRoot": "apps/workspace-extensions-e2e/src",
+      "targets": {
+        "e2e": {
+          "executor": "@nrwl/nx-plugin:e2e",
+          "options": {
+            "target": "workspace-extensions:build",
+            "jestConfig": "apps/workspace-extensions-e2e/jest.config.js"
+          }
+        }
+      }
     }
   },
   "cli": {

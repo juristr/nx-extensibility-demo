@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nxextensibility/nx-conf": ["libs/nx-conf/src/index.ts"]
+      "@nxextensibility/nx-conf": ["libs/nx-conf/src/index.ts"],
+      "@nxextensibility/workspace-extensions": [
+        "libs/workspace-extensions/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
