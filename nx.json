@@ -35,7 +35,8 @@
       "implicitDependencies": ["demo"]
     },
     "nx-conf": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": ["workspace-extensions"]
     },
     "workspace-extensions": {
       "tags": []

@@ -112,7 +112,13 @@
           "outputs": ["{options.outputPath}"],
           "options": {
             "outputPath": "dist/libs/nx-conf"
-          }
+          },
+          "dependsOn": [
+            {
+              "target": "build",
+              "projects": "dependencies"
+            }
+          ]
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
